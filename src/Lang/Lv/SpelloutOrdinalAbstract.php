@@ -6,67 +6,71 @@
  * @copyright Arius IT Arkadiusz Ostrycharz
  * @homepage http://arius.pl
  *
- * Russian Version:
+ * Latvian Version:
  * @copyright Grigorij Kosba 
  * @homepage http://www.lern-online.net
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Arius\Lang\Ru;
+namespace Arius\Lang\Lv;
+
 use Arius\SpelloutInterface;
 use Arius\SpelloutTrait;
+
 abstract class SpelloutOrdinalAbstract implements SpelloutInterface
 {
     use SpelloutTrait;
+
     protected $complex = [
         1 => "",
-        2 => "двух", 	
-        3 => "трёх",	
-        4 => "четырёх",	
-        5 => "пяти",	
-        6 => "шести",	
-        7 => "семи",	
-        8 => "восьми",	
-        9 => "девяти",	
-        10 => "десяти", 			
-        11 => "одиннадцати", 	
-        12 => "двенадцати",		
-        13 => "тринадцати",		
-        14 => "четырнадцати",	
-        15 => "пятнадцати", 	
-        16 => "шестнадцати",	
-        17 => "семнадцати",		
-        18 => "восемнадцати",	
-        19 => "девятнадцати",	
-        20 => "двадцати",
-        30 => "тридцати",
-        40 => "сороковой", 
-        50 => "пятидесяти",
-        60 => "шестидесяти",
-        70 => "семидесяти",
-        80 => "восмидесяти",
-        90 => "девиностй",
-        100 => "сто",
-        200 => "двухсотый",
-        300 => "трёхсотый",
-        400 => "четырёхсотый",
-        500 => "пятисотый",
-        600 => "шестисотый",
-        700 => "семисотый",
-        800 => "восьмисотый",
-        900 => "девятисотый"
+        2 => "div", 	
+        3 => "trīs",	
+        4 => "četr",	
+        5 => "piec",	
+        6 => "seš",	
+        7 => "septiņ",	
+        8 => "astoņ",	
+        9 => "deviņ",	
+        10 => "desmit",
+        11 => "vienpadsmit", 	
+        12 => "divpadsmit",		
+        13 => "trīspadsmit",		
+        14 => "četrpadsmit",	
+        15 => "piecpadsmit", 	
+        16 => "sešpadsmit",	
+        17 => "septiņpadsmit",		
+        18 => "astoņpadsmit",	
+        19 => "deviņpadsmit",	
+        20 => "divdesmit",
+        30 => "trīsdesmit",
+        40 => "četrdesmit", 
+        50 => "piecdesmit",
+        60 => "sešdesmit",
+        70 => "septiņdesmit",
+        80 => "astoņdesmit",
+        90 => "deviņdesmit",
+        100 => "simtais",
+        200 => "divsimtais", 		// $hundredsPrefixes[2] + $zeroes[2] 
+        300 => "trīssimtais",		// $hundredsPrefixes[3] + $zeroes[2] 
+        400 => "četrsimtais",		// $hundredsPrefixes[4] + $zeroes[2] 
+        500 => "piecsimtais",		// $hundredsPrefixes[5] + $zeroes[2] 
+        600 => "sešsimtais",		// $hundredsPrefixes[6] + $zeroes[2] 
+        700 => "septiņsimtais",		// $hundredsPrefixes[7] + $zeroes[2] 
+        800 => "astoņsimtais",		// $hundredsPrefixes[8] + $zeroes[2] 
+        900 => "deviņsimtais",  	// $hundredsPrefixes[9] + $zeroes[2]
     ];
+
     protected $hundredsPrefixes = [
         1 => "",
-        2 => "двух",
-        3 => "трёх",
-        4 => "четырёх",
-        5 => "пяти",
-        6 => "шести",
-        7 => "семи",
-        8 => "восьми",
-        9 => "девяти"
+        2 => "div", 	
+        3 => "trīs",	
+        4 => "četr",	
+        5 => "piec",
+        6 => "seš",	
+        7 => "septiņ",	
+        8 => "astoņ",	
+        9 => "deviņ",	
     ];
     protected $cardinal;
     protected $complexSuffix = '';
@@ -173,3 +177,4 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
         return $ordinal;
     }
 }
+?>
