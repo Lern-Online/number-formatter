@@ -85,7 +85,6 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
     }
     /**
      * Due the different versions of ICU available, we need to fix first word from complex cardinal numbers.
-     * Sometimes they may be feminine (and this is incorrect in russian language).
      *
      * @param string $number
      * @return string
