@@ -62,7 +62,7 @@ class SpelloutOrdinalNeuterTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('миллионное', $f->format(1000000));
         $this->assertEquals('миллион пятисотыйтысячное', $f->format(1500000));
 
-        $this->assertEquals('три миллионное', $f->format(3000000));
+        $this->assertEquals('трёхмиллионное', $f->format(3000000));
         $this->assertEquals('три миллионы третье', $f->format(3000003));
         $this->assertEquals('три миллионы четырестатысячное', $f->format(3400000));
         $this->assertEquals('четыре миллионы пятьсот пятьдесяттысячное', $f->format(4550000));
