@@ -36,7 +36,7 @@ class SpelloutOrdinalNeuterTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('второе', $f->format(2));
 
         $this->assertEquals('одиннадцатое', $f->format(11));
-        $this->assertEquals('двадцать первое', $f->format(21));// 20 should use cardinal numeral
+        $this->assertEquals('двадцать первое', $f->format(21));
         $this->assertEquals('восьмидесятое', $f->format(80));
 
         $this->assertEquals('сотое', $f->format(100));
@@ -62,7 +62,7 @@ class SpelloutOrdinalNeuterTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('миллионное', $f->format(1000000));
         $this->assertEquals('миллион пятисотыйтысячное', $f->format(1500000));
 
-        $this->assertEquals('три миллионное', $f->format(3000000));// 'три' is missing
+        $this->assertEquals('три миллионное', $f->format(3000000));
         $this->assertEquals('три миллионы третье', $f->format(3000003));
         $this->assertEquals('три миллионы четырестатысячное', $f->format(3400000));
         $this->assertEquals('четыре миллионы пятьсот пятьдесяттысячное', $f->format(4550000));

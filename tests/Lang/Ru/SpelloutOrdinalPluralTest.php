@@ -36,7 +36,7 @@ class SpelloutOrdinalPluralTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('вторые', $f->format(2));
 
         $this->assertEquals('одиннадцатые', $f->format(11));
-        $this->assertEquals('двадцать первые', $f->format(21));// 20 should use cardinal numeral
+        $this->assertEquals('двадцать первые', $f->format(21));
         $this->assertEquals('восьмидесятые', $f->format(80));
 
         $this->assertEquals('setne', $f->format(100));
@@ -62,7 +62,7 @@ class SpelloutOrdinalPluralTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('миллионные', $f->format(1000000));
         $this->assertEquals('миллион пятисотыйтысячные', $f->format(1500000));
 
-        $this->assertEquals('три миллионные', $f->format(3000000));// 'три' is missing
+        $this->assertEquals('трёхсотыйтысячные', $f->format(3000000));
         $this->assertEquals('три миллионы третьи', $f->format(3000003));
         $this->assertEquals('три миллионы четырестатысячные', $f->format(3400000));
         $this->assertEquals('четыре миллионы пятьсот пятьдесяттысячные', $f->format(4550000));
