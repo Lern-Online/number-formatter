@@ -14,49 +14,53 @@
  * file that was distributed with this source code.
  */
 namespace Arius\Lang\Ru;
+
 use Arius\SpelloutInterface;
 use Arius\SpelloutTrait;
+
 abstract class SpelloutOrdinalAbstract implements SpelloutInterface
 {
     use SpelloutTrait;
+	
     protected $complex = [
         1 => "",
-        2 => "двух", 	
-        3 => "трёх",	
-        4 => "четырёх",	
-        5 => "пяти",	
-        6 => "шести",	
-        7 => "семи",	
-        8 => "восьми",	
-        9 => "девяти",	
-        10 => "десяти", 			
-        11 => "одиннадцати", 	
-        12 => "двенадцати",		
-        13 => "тринадцати",		
-        14 => "четырнадцати",	
-        15 => "пятнадцати", 	
-        16 => "шестнадцати",	
-        17 => "семнадцати",		
-        18 => "восемнадцати",	
-        19 => "девятнадцати",	
+        2 => "двух", 
+        3 => "трёх",
+        4 => "четырёх",
+        5 => "пяти",
+        6 => "шести",
+        7 => "семи",
+        8 => "восьми",
+        9 => "девяти",
+        10 => "десяти",
+        11 => "одиннадцати", 
+        12 => "двенадцати",	
+        13 => "тринадцати",	
+        14 => "четырнадцати",
+        15 => "пятнадцати", 
+        16 => "шестнадцати",
+        17 => "семнадцати",	
+        18 => "восемнадцати",
+        19 => "девятнадцати",
         20 => "двадцати",
         30 => "тридцати",
-        40 => "сороковой", 
+        40 => "сорока", 
         50 => "пятидесяти",
         60 => "шестидесяти",
         70 => "семидесяти",
-        80 => "восмидесяти",
-        90 => "девиностй",
-        100 => "сто",
-        200 => "двухсотый",
-        300 => "трёхсотый",
-        400 => "четырёхсотый",
-        500 => "пятисотый",
-        600 => "шестисотый",
-        700 => "семисотый",
-        800 => "восьмисотый",
-        900 => "девятисотый"
+        80 => "восьмидесяти",
+        90 => "девяносто",
+        100 => "сто", 
+        200 => "двухсот",
+        300 => "трёхсот",
+        400 => "четырёхсот",
+        500 => "пятисот",
+        600 => "шестисот",
+        700 => "семисот",
+        800 => "восьмисот",
+        900 => "девятисот" 
     ];
+
     protected $hundredsPrefixes = [
         1 => "",
         2 => "двух",
@@ -85,6 +89,7 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
     }
     /**
      * Due the different versions of ICU available, we need to fix first word from complex cardinal numbers.
+     * Sometimes they may be feminine (and this is incorrect in russian language).
      *
      * @param string $number
      * @return string
@@ -92,7 +97,14 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
     protected function fixCardinal($number)
     {
         $feminineToMasculine = [
-            'двасти' => 'двести'
+            'двасти' => 'двести',
+            'миллионы' => 'миллионa',
+            'миллиарды' => 'миллиарда',
+            'биллион' => 'триллион',
+            'биллионы' => 'триллиона',
+            'биллионов' => 'триллионов',
+            'триллионы' => 'триллиона',	
+            'квадриллионы' => 'квадриллиона'
         ];
         return isset($feminineToMasculine[$number]) ? $feminineToMasculine[$number] : $number;
     }
@@ -172,3 +184,4 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
         return $ordinal;
     }
 }
+?>
