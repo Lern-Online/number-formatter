@@ -30,6 +30,6 @@ class SpelloutOrdinalAbstractTest extends \PHPUnit_Framework_TestCase
     public function testDigits()
     {
         // spellout-ordinal-abstract will be not loaded, cardinal number should be used instead
-        $this->assertEquals('сорок два', $this->formatter->format(42));
+        $this->assertEquals('četrdesmit divi', $this->formatter->format(42));
     }
 }
