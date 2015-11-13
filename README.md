@@ -42,7 +42,7 @@ Use in code just like [NumberFormatter class](http://php.net/manual/en/class.num
 ```php
 use Arius\NumberFormatter;
 
-$formatter = new NumberFormatter('pl', NumberFormatter::SPELLOUT);
+$formatter = new NumberFormatter('pl', NumberFormatter::SPELLOUT); // or 'ru' for russian
 $formatter->setTextAttribute(NumberFormatter::DEFAULT_RULESET, "%spellout-ordinal");
 
 $formatter->format(123);
