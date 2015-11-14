@@ -64,8 +64,29 @@ Additional supported ordinals
 
 - spellout-ordinal
 - spellout-ordinal-feminine
+- spellout-ordinal-feminine-ablative
+- spellout-ordinal-feminine-accusative
+- spellout-ordinal-feminine-dative
+- spellout-ordinal-feminine-genitive
+- spellout-ordinal-feminine-locative
 - spellout-ordinal-masculine
+- spellout-ordinal-masculine-ablative
+- spellout-ordinal-masculine-accusative
+- spellout-ordinal-masculine-dative
+- spellout-ordinal-masculine-genitive
+- spellout-ordinal-masculine-locative
 - spellout-ordinal-neuter
-- spellout-ordinal-plural (plural isn't part of ICU in all languages)
+- spellout-ordinal-neuter-ablative
+- spellout-ordinal-neuter-accusative
+- spellout-ordinal-neuter-dative
+- spellout-ordinal-neuter-genitive
+- spellout-ordinal-neuter-locative
+- spellout-ordinal-plural 
+- spellout-ordinal-plural 
+- spellout-ordinal-plural-ablative
+- spellout-ordinal-plural-accusative
+- spellout-ordinal-plural-dative
+- spellout-ordinal-plural-genitive
+- spellout-ordinal-plural-locative
 
 
