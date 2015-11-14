@@ -14,26 +14,20 @@
  * file that was distributed with this source code.
  */
 namespace Arius\Tests\Lang\Ru;
-
 use Arius\NumberFormatter;
-
 class SpelloutOrdinalTest extends \PHPUnit_Framework_TestCase
 {
     protected $formatter;
-
     protected function setUp()
     {
         $this->formatter = new NumberFormatter('ru', NumberFormatter::SPELLOUT);
         $this->formatter->setTextAttribute(NumberFormatter::DEFAULT_RULESET, "%spellout-ordinal");
-
         $this->masculineFormatter = new NumberFormatter('ru', NumberFormatter::SPELLOUT);
         $this->masculineFormatter->setTextAttribute(NumberFormatter::DEFAULT_RULESET, "%spellout-ordinal-masculine");
     }
-
     public function testDigits()
     {
         $randomNumber = rand(1,100000);
-
         $this->assertEquals(
             $this->formatter->format($randomNumber),
             $this->masculineFormatter->format($randomNumber)
