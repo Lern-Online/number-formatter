@@ -15,11 +15,11 @@ Put a number with max 15 characters in the input box and the script will generat
 Use it
 ======
 
-1. polish ordinal numerals (and cardinal numbers from ICU)
+1. polish ordinal numbers (and cardinal numbers from ICU)
 ----------------------------
 http://www.lern-online.net/polnisch/schreiben/zahlen/zahlengenerator/
 
-2. russian ordinal numerals (and cardinal numbers from ICU)
+2. russian ordinal numbers (and cardinal numbers from ICU)
 ----------------------------
 http://www.lern-online.net/russisch/schreiben/zahlen/zahlengenerator/
 
