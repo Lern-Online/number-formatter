@@ -18,7 +18,7 @@ namespace Arius\Lang\Cs;
 class SpelloutOrdinalMasculine extends SpelloutOrdinalAbstract
 {
     protected $simple = [
-        0 => "",
+        0 => "nultý",
         1 => "první",
         2 => "druhý",
         3 => "třetí",
