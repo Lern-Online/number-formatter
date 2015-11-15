@@ -32,7 +32,7 @@ class SpelloutOrdinalFeminine extends SpelloutOrdinalAbstract
         11 => "одинадцятиa",
         12 => "дванадцятиa",
         13 => "тринадцятиa",
-        14 => "тринадцятиa",
+        14 => "чотирнадцятиa",
         15 => "п'ятнадцятиa",
         16 => "шістнадцятиa",
         17 => "сімнадцятиa",
@@ -52,9 +52,9 @@ class SpelloutOrdinalFeminine extends SpelloutOrdinalAbstract
         2 => "сотиa",
         3 => "тисячниa",
         6 => "мільйонниa",
-        9 => "мільярдныиa",
+        9 => "мільярдниa",
         12 => "більйонниa",
-        15 => "більярдныиa",				
+        15 => "вадрильйониa",				
     ];
 }
 ?>
