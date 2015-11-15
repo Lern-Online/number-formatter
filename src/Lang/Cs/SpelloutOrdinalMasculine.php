@@ -49,7 +49,7 @@ class SpelloutOrdinalMasculine extends SpelloutOrdinalAbstract
     ];
 
     protected $zeroes = [
-        2 => "",
+        2 => "stý",
         3 => "tisící",
         6 => "milióntý",
         9 => "miliardtý",
