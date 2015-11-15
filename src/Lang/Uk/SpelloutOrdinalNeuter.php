@@ -6,7 +6,7 @@
  * @copyright Arius IT Arkadiusz Ostrycharz
  * @homepage http://arius.pl
  *
- * Ukrainian  Version:
+ * Ukrainian Version:
  * @copyright Grigorij Kosba 
  * @homepage http://www.lern-online.net
  *
@@ -14,7 +14,7 @@
  * file that was distributed with this source code.
  */
 namespace Arius\Lang\Uk;
-include_once ($_SERVER['DOCUMENT_ROOT']."/data/number-formatter/Lang/Uk/SpelloutOrdinalAbstract.php");
+
 class SpelloutOrdinalNeuter extends SpelloutOrdinalAbstract
 {
     protected $simple = [

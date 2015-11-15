@@ -6,7 +6,7 @@
  * @copyright Arius IT Arkadiusz Ostrycharz
  * @homepage http://arius.pl
  *
- * Ukrainian  Version:
+ * Ukrainian Version:
  * @copyright Grigorij Kosba 
  * @homepage http://www.lern-online.net
  *
@@ -17,8 +17,7 @@ namespace Arius\Lang\Uk;
 
 use Arius\SpelloutInterface;
 use Arius\SpelloutTrait;
-include_once ($_SERVER['DOCUMENT_ROOT']."/data/number-formatter/SpelloutInterface.php");	
-include_once ($_SERVER['DOCUMENT_ROOT']."/data/number-formatter/SpelloutTrait.php");	
+	
 abstract class SpelloutOrdinalAbstract implements SpelloutInterface
 {
     use SpelloutTrait;
