@@ -15,7 +15,7 @@
  */
 namespace Arius\Lang\Cs;
 
-class SpelloutOrdinal extends SpelloutOrdinalMasculine
+class SpelloutOrdinalPluralNeuter extends SpelloutOrdinalPluralMasculineInanimate
 {
 
 }

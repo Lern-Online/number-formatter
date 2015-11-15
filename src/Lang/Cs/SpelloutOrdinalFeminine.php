@@ -15,46 +15,46 @@
  */
 namespace Arius\Lang\Cs;
 
-class SpelloutOrdinalFemine extends SpelloutOrdinalAbstract
+class SpelloutOrdinalFeminine extends SpelloutOrdinalAbstract
 {
-    protected $simple = [
-        0 => "",
-        1 => "",
-        2 => "",
-        3 => "",
-        4 => "",
-        5 => "",
-        6 => "",
-        7 => "",
-        8 => "",
-        9 => "",
-        10 => "",
-        11 => "",
-        12 => "",
-        13 => "",
-        14 => "",
-        15 => "",
-        16 => "",
-        17 => "",
-        18 => "",
-        19 => "",
-        20 => "",
-        30 => "",
-        40 => "",
-        50 => "",
-        60 => "",
-        70 => "",
-        80 => "",
-        90 => "",
+     protected $simple = [
+        0 => "nultá",
+        1 => "první",
+        2 => "druhá",
+        3 => "třetí",
+        4 => "čtvrtá",
+        5 => "pátá",
+        6 => "šestá",
+        7 => "sedmá",
+        8 => "osmá", 
+        9 => "devátá",
+        10 => "desátá",
+        11 => "jedenáctá",
+        12 => "dvanáctá",
+        13 => "třináctá",
+        14 => "čtrnáctá",
+        15 => "patnáctá",
+        16 => "šestnáctá",
+        17 => "sedmnáctá",
+        18 => "osmnáctá",
+        19 => "devatenáctá",
+        20 => "dvacátá",
+        30 => "třicátá",
+        40 => "čtyřicátá",
+        50 => "padesátá",
+        60 => "šedesátá",
+        70 => "sedmdesátá",
+        80 => "osmdesátá",
+        90 => "devadesátá"
     ];
 
     protected $zeroes = [
-        2 => "", //100
-        3 => "", //1000
-        6 => "",// 1 000 000
-        9 => "",// 1 000 000 000
-        12 => "",// 1 000 000 000 000
-        15 => "",// 1 000 000 000 000			
+        2 => "stá",
+        3 => "tisící",
+        6 => "milióntá",
+        9 => "miliardtá",
+        12 => "biliontá",
+        15 => "biliardtá"					
     ];
 }
 ?>

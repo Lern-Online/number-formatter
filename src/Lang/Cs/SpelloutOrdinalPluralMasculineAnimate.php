@@ -15,7 +15,7 @@
  */
 namespace Arius\Lang\Cs;
 
-class SpelloutOrdinalNeuter extends SpelloutOrdinalAbstract
+class SpelloutOrdinalPluralMasculineAnimate extends SpelloutOrdinalAbstract
 {
     protected $simple = [
         0 => "nulté",
@@ -54,7 +54,7 @@ class SpelloutOrdinalNeuter extends SpelloutOrdinalAbstract
         6 => "miliónté",
         9 => "miliardté",
         12 => "bilionté",
-        15 => "biliardté"				
+        15 => "biliardté"			
     ];
 }
 ?>

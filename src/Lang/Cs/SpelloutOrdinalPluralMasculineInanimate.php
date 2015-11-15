@@ -15,7 +15,7 @@
  */
 namespace Arius\Lang\Cs;
 
-class SpelloutOrdinalMasculine extends SpelloutOrdinalAbstract
+class SpelloutOrdinalPluralMasculineInanimate extends SpelloutOrdinalAbstract
 {
     protected $simple = [
         0 => "nultý",

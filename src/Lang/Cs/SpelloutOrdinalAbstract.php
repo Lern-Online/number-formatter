@@ -17,7 +17,7 @@ namespace Arius\Lang\Cs;
 
 use Arius\SpelloutInterface;
 use Arius\SpelloutTrait;
-	
+
 abstract class SpelloutOrdinalAbstract implements SpelloutInterface
 {
     use SpelloutTrait;
@@ -26,30 +26,30 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
         1 => "",
         2 => "dvou",
         3 => "tři",
-        4 => "",
+        4 => "čtyř",
         5 => "pěti",
-        6 => "",
-        7 => "",
-        8 => "",
-        9 => "",
+        6 => "šesti",
+        7 => "sedmi",
+        8 => "osmi",
+        9 => "devíti",
         10 => "deseti",
-        11 => "", 
-        12 => "",	
-        13 => "",	
-        14 => "",
-        15 => "", 
-        16 => "",
-        17 => "",	
-        18 => "",
-        19 => "",
-        20 => "",
-        30 => "",
-        40 => "", 
-        50 => "",
-        60 => "",
-        70 => "",
-        80 => "",
-        90 => "",
+        11 => "jedenácti", 
+        12 => "dvanácti",	
+        13 => "třinácti",
+        14 => "čtrnácti",
+        15 => "patnácti",
+        16 => "šestnácti",
+        17 => "sedmnácti",
+        18 => "osmnácti",		
+        19 => "devatenácti", 
+        20 => "dvaceti",
+        30 => "třiceti",
+        40 => "čtyřicet", 
+        50 => "padesáti",
+        60 => "šedesáti",
+        70 => "sedmdesáti",
+        80 => "osmdesáti",
+        90 => "devadesáti",
         100 => "sto",
         200 => "dvoustý", 	
         300 => "třístý",		
@@ -59,18 +59,17 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
         700 => "sedmistý",		
         800 => "osmistý",	
         900 => "devítistý"
-
     ];
     protected $hundredsPrefixes = [
         1 => "",
         2 => "dvou",
         3 => "tři",
-        4 => "",
+        4 => "čtyř",
         5 => "pěti",
-        6 => "",
-        7 => "",
-        8 => "",
-        9 => ""
+        6 => "šesti",
+        7 => "sedmi",
+        8 => "osmi",
+        9 => "devíti"
     ];
 
     protected $cardinal;
@@ -99,16 +98,16 @@ abstract class SpelloutOrdinalAbstract implements SpelloutInterface
      * @param string $number
      * @return string
      */
-    protected function fixFeminineCardinal($number)
+	 
+   protected function fixFeminineCardinal($number)
     {
         $feminineToMasculine = [
-            'jedna' => 'jeden',//fix
-            'dwie' => 'dwa'//fix
+            // not used now
         ];
 
         return isset($feminineToMasculine[$number]) ? $feminineToMasculine[$number] : $number;
     }
-
+	
     private function prepare($number)
     {
         $this->debugNum = $number;
